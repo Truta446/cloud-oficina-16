@@ -1,0 +1,47 @@
+# Define a região na AWS que será criada toda infraestrutura
+region = "us-east-1" # Virginia
+
+# Define o nome do usuário que esta executando este Projeto
+user = ""
+
+# Define as informações do banco de dados RDS
+rds-username      = ""
+rds-password      = ""
+rds-identifier    = ""
+rds-name          = ""
+rds-instance-type = ""
+multi-az          = false
+
+# Especifique o nome da tag padrão utilizada nos nomes dos serviços
+base-tag = ""
+
+# Especifique o nome do bucket
+bucket-name = "" # Como o bucket deve ser unico em toda a AWS, sugiro modifica este nome para evitar conflito.
+
+# Configurações mínima e máxima para o autoscaling
+min-tasks = 2
+max-tasks = 4
+
+# Define se serão criados NAT Gateways nas 
+# subnets 
+use-nat-gateway = false
+
+# Define o dominio - Colocar, se existir, seu dominio cadatrado no route53
+certified-domain = ""
+
+# Define a tag de Ambiente do repositório EC2
+tags = {
+  "Environment" = ""
+  "Name"        = ""
+}
+
+# CloudFront
+url = ""
+
+prefix-url = ""
+
+client = ""
+
+ec2-instance-type = ""
+ec2-ami           = "" # Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2023-12-07
+ec2-key-name      = ""
