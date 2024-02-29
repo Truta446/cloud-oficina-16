@@ -41,15 +41,6 @@
 
       configuration = {
         ProjectName = var.instance_name
-        EnvironmentVariables = jsonencode(
-          [
-            {
-              name  = "DATABASE_URL"
-              type  = "PLAINTEXT"
-              value = "postgresql://mentorei:Mentorei_2023@terraform-20230522003147432700000001.cmax3y9yqlgt.us-east-2.rds.amazonaws.com:5455/mentorei?scheme=public"
-            }
-          ]
-        )
       }
     }
   }
